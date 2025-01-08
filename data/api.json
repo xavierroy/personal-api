@@ -1,0 +1,166 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "My Personal API",
+    "version": "1.0.0",
+    "description": "A Personal API for Xavier Roy",
+    "contact": {
+      "name": "Xavier Roy",
+      "email": "xavier@xavierroy.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    },
+    "x-api-owner": "Xavier Roy"
+  },
+  "components": {
+    "schemas": {
+      "Contact": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "location": {
+            "type": "string"
+          }
+        }
+      },
+      "Social": {
+        "type": "object",
+        "properties": {
+          "linkedin": {
+            "type": "string",
+            "format": "uri"
+          },
+          "twitter": {
+            "type": "string",
+            "format": "uri"
+          },
+          "github": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "Education": {
+        "type": "object",
+        "properties": {
+          "degree": {
+            "type": "string",
+            "description": "Degree earned (e.g., \"Bachelor of Science\")"
+          },
+          "major": {
+            "type": "string",
+            "description": "Major field of study"
+          },
+          "institution": {
+            "type": "string",
+            "description": "Name of the educational institution"
+          },
+          "graduationYear": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Year of graduation"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/me": {
+      "get": {
+        "summary": "Get basic information about me",
+        "description": "Retrieves basic information about Xavier Roy",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "The full name"
+                    },
+                    "photo": {
+                      "type": "string",
+                      "description": "A photo of Xavier Roy"
+                    },
+                    "bio": {
+                      "type": "string",
+                      "description": "A short bio about Xavier Roy"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/contact": {
+      "get": {
+        "summary": "Get contact information about me",
+        "description": "Retrieves contact information about Xavier Roy",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Contact"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/social": {
+      "get": {
+        "summary": "Get social media links",
+        "description": "Retrieves the user's social media profiles.",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Social"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me/education": {
+      "get": {
+        "summary": "Get user's education information",
+        "description": "Retrieves information about the user's education.",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Education"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
