@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home on A Personal API</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in home on A Personal API</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Feb 2018 11:47:06 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/page/about/</link>
+      <pubDate>Fri, 09 Feb 2018 11:47:06 -0500</pubDate>
+      <guid>//localhost:1313/page/about/</guid>
+      <description>&lt;p&gt;An API about our school athletes!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/page/hello/</link>
+      <pubDate>Fri, 09 Feb 2018 11:47:06 -0500</pubDate>
+      <guid>//localhost:1313/page/hello/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae unde at enim quod tenetur. Obcaecati quia repellat, sapiente velit accusantium, rerum tempore. Dignissimos pariatur sequi sit ducimus ad sapiente maxime!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
