@@ -1,0 +1,10 @@
+# Every payers/?team={team} rewrites to /teams/{team}/socials.json
+/socials team=:id  /teams/:id/socials.json 200
+
+# Every socials/?{taxonomy}={taxonomyTerm} redirects to {taxonomy}/{taxonomyTerm}/socials.json
+{{- range $key, $value := .Site.Taxonomies }}
+/socials {{ $key | singularize }}=:id  /{{ $key }}/:id/socials.json 200
+{{- end }}
+
+# Every endpoint redirect to its /index.json
+/* /:splat/index.json 200

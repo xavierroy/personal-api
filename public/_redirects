@@ -1,0 +1,9 @@
+# Every payers/?team={team} rewrites to /teams/{team}/socials.json
+/socials team=:id  /teams/:id/socials.json 200
+
+# Every socials/?{taxonomy}={taxonomyTerm} redirects to {taxonomy}/{taxonomyTerm}/socials.json
+/socials practice=:id  /practices/:id/socials.json 200
+/socials sport=:id  /sports/:id/socials.json 200
+
+# Every endpoint redirect to its /index.json
+/* /:splat/index.json 200

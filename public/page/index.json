@@ -1,0 +1,22 @@
+{
+	"data" : 
+    {
+        
+            "section" : "page",
+        
+        
+        "count" : "1"
+        ,"items" : [
+        
+            {
+    "title": "About",
+    "date": "2025-01-08 00:00:00 +0000 UTC",
+    "type": "page",
+    "permalink" : "//localhost:1313/page/about/index.json",
+    "summary" : "<p>An API about me!</p>"
+}
+        
+        ]
+    }
+
+}

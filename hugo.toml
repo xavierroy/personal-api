@@ -1,4 +1,27 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'A Personal API'
+baseURL = "/"
+languageCode = "en-us"
+title = "Personal API"
 
+[outputs]
+  page = ["json","socials"]
+  home = ["json", "redirect"]
+  teams = ["json"]
+  section = ["json"]
+  taxonomy = ["json", "socials"]
+
+[mediaTypes."text/netlify"]
+suffix = ""
+delimiter = ""
+
+[outputFormats.socials]
+baseName = "socials"
+mediatype ="application/json"
+[outputFormats.redirect]
+mediatype = "text/netlify"
+baseName = "_redirects"
+[taxonomies]
+  sport = "sports"
+  practice = "practices"
+
+[permalinks]
+  page = "/:section/:title/"

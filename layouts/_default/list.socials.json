@@ -1,0 +1,12 @@
+{{ define "response" }}
+{{- $socials := where .Data.Pages "Type" "socials" -}}
+    {
+        "group" : "{{.Type}}::{{ .Title }}",
+        "count" : "{{ len $socials }}"
+        ,"socials" : [
+        {{ range $index, $e := $socials }}
+            {{ if $index }}, {{ end }}{{ .Render "item" }}
+        {{ end }}
+        ]
+    }
+{{ end }}

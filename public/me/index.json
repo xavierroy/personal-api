@@ -1,0 +1,30 @@
+{
+	"data" : 
+    {
+        
+            "section" : "me",
+        
+        
+        "count" : "2"
+        ,"items" : [
+        
+            {
+    "title": "github",
+    "date": "0001-01-01 00:00:00 +0000 UTC",
+    "type": "link",
+    "permalink" : "//localhost:1313/xavierroy/index.json",
+    "summary" : "<p>My Github profile</p>"
+}
+        
+            , {
+    "title": "linkedin",
+    "date": "0001-01-01 00:00:00 +0000 UTC",
+    "type": "link",
+    "permalink" : "//localhost:1313/xavierroy/index.json",
+    "summary" : "<p>My LInkedIn profile</p>"
+}
+        
+        ]
+    }
+
+}
