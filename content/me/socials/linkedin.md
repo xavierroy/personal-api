@@ -1,6 +1,7 @@
 ---
 title: linkedin
-url: "xavierroy"
+url: "linkedin"
 type: link
+link: "xavierroy"
 ---
 My LInkedIn profile

@@ -27,7 +27,7 @@ $openapi variable declaration at the beginning with: {{/*
 
 where fileName is the file's name with `.json` removed from the end
  -->
- {{ $openapi := .Site.Data.api }}
+ {{ $openapi := .Site.Data.openapi }}
   <div class="$openapi-spec-content">
     <h2>{{ $openapi.info.title }} version {{ $openapi.info.version }}</h2>
     <div class="description">
